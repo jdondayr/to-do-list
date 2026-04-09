@@ -1,2 +1,2 @@
-# to-do-list
-Simple to-do list
+> [!NOTE]
+> Simple to do list
