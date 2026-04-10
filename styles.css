@@ -108,5 +108,10 @@ ul {
                 box-shadow: 0px 0px 6px rgb(207, 1, 1);
             }
 
+        #tareasTotales, #tareasCompletadas {
+            font: bold 1.2rem "Times New Roman";
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+
 /* Clases para JavaScript */
 .completadas {text-decoration: line-through;}
