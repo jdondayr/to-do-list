@@ -15,6 +15,7 @@ botonAñadir.addEventListener("click", () => {
     inputTarea.value = ""; // Reinicia value del input
     let botonBorrarTarea = document.createElement("button");
     botonBorrarTarea.textContent = "X";
+    botonBorrarTarea.id = "botonBorrarTarea";
 
     // Marcar las tareas como completadas
     tareaNueva.addEventListener("click", () => {
@@ -38,6 +39,7 @@ botonAñadirImportante.addEventListener("click", () => {
     inputTarea.value = ""; // Reinicia value del input
     let botonBorrarTarea = document.createElement("button");
     botonBorrarTarea.textContent = "X";
+    botonBorrarTarea.id = "botonBorrarTarea";
 
     // Marcar las tareas como completadas
     tareaNueva.addEventListener("click", () => {

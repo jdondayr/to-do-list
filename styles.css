@@ -7,24 +7,26 @@ body {
 }
 
 h1 {
+    margin: 0;
     width: fit-content;
     padding: 1rem;
     border-radius: 5px;
-    background-color: rgb(152, 26, 215);
+    background-color: rgb(71, 71, 228);
     color: white;
-    box-shadow: 0px 0px 6px rgb(152, 26, 215);
+    text-shadow: 0px 0px 2px white;
+    box-shadow: 0px 0px 6px rgb(71, 71, 228);
 }
 
 input {
     font-size: 1rem;
     padding: 0.5rem;
     border-radius: 10px;
-    border: 1px solid rgb(152, 26, 215);
+    border: 1px solid rgb(71, 71, 228);
 }
         input:focus {
-            outline: 2px solid rgb(152, 26, 215);
-            box-shadow: 0px 0px 7px rgb(152, 26, 215);
-            caret-color: rgb(152, 26, 215);
+            outline: 2px solid rgb(71, 71, 228);
+            box-shadow: 0px 0px 7px rgb(71, 71, 228);
+            caret-color: rgb(71, 71, 228);
         }
 
 button {
@@ -32,6 +34,7 @@ button {
     font-size: 1rem;
     background-color: black;
     color: white;
+    text-shadow: 0px 0px 1px white;
     box-shadow: 2px 2px 6px black;
     border-radius: 5px;
     border: none;
@@ -40,6 +43,14 @@ button {
         button:active {
             box-shadow: none;
             background-color: rgb(94, 94, 94);
+        }
+
+        #botonAñadirImportante {background-color: rgb(207, 1, 1);}
+        #botonBorrarTarea {
+            display: flex; justify-content: center; align-items: center;
+            text-align: center;
+            font-size: 0.5rem;
+            height: 0.2rem; width: 0.2rem;
         }
 
 li {
@@ -59,9 +70,11 @@ ul {
 }
 
     .parte-izquierda {
-        width: 20%; height: 60%;
+        width: 20%; height: fit-content;
+        padding-top: 2rem; padding-bottom: 2rem;
         display: flex; flex-direction: column; align-items: center;
         gap: 1rem;
+        border: 2px solid black; border-radius: 20px;
     }
 
     .parte-derecha {
@@ -71,12 +84,18 @@ ul {
         #listaTareas {
             display: flex; flex-direction: column;
             width: 50%; height: 100%;
+            text-shadow: 0px 0px 2px black;
         }
 
         #listaImportantes {
             display: flex; flex-direction: column;
-            width: 50%; height: 100%
+            width: 50%; height: 100%;
+            text-shadow: 0px 0px 2px black;
         }
+            #listaImportantes h1 {
+                background-color: rgb(207, 1, 1);
+                box-shadow: 0px 0px 6px rgb(207, 1, 1);
+            }
 
 /* Clases para JavaScript */
 .completadas {text-decoration: line-through;}
